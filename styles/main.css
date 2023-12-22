@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  scroll-behavior: smooth;
+}
+
+.navigation.is-open {
+  @apply flex;
+
+  transform: translateY(-100%);
+  animation: dropdown 500ms 1 cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation-fill-mode: forwards;
+}
+
+@keyframes dropdown {
+  to {
+    transform: translateY(0);
+  }
+}
+
+.navigation.is-close {
+  animation-name: dropup;
+}
+
+@keyframes dropup {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
