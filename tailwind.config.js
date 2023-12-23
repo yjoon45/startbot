@@ -12,17 +12,16 @@ module.exports = {
         heading: ['Adieu', 'Poppins', 'sans-serif'],
       },
       colors: {
-        pink: {
-          700: '#b60f52',
-          600: '#dc1468',
-        },
-        fuchsia: {
-          950: '#43155a',
-        },
         blue: {
-          950: '#081332',
-          900: '#0f1030',
-          800: '#394bb5',
+          50: '#cbd3d7',
+          100: '#e3e7ea',
+          700: '#276ac1',
+          800: '#253e62',
+          950: '#09111c',
+        },
+        slate: {
+          50: '#f0f1f0',
+          300: '#aebdc4',
         },
       },
       animation: {

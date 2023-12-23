@@ -33,7 +33,9 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "@types/slick-carousel": "^1.6.40",
     "aos": "^2.3.4",
-    "jquery": "^3.7.1"
+    "jquery": "^3.7.1",
+    "postcss-import": "^15.1.0"
   }
 }

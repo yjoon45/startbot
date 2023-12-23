@@ -1,9 +1,82 @@
+@import './slick.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
   scroll-behavior: smooth;
+}
+
+.bg-body {
+  background: theme('colors.blue.950') url(../images/bg-3938.webp) repeat;
+}
+
+:focus-visible {
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: theme('colors.slate.50');
+}
+
+.slider-logo {
+  transform: translateY(70%) rotateZ(var(--angle, 0));
+
+  &.add-transition {
+    @apply transition-transform duration-700;
+  }
+}
+
+.feature-slider-dots {
+  & > ul {
+    @apply flex justify-center gap-3;
+
+    & > li > button {
+      font-size: 0;
+
+      @apply bg-gradient-to-b from-blue-100 to-blue-800 w-4 h-4 rounded-full relative transition-[width] duration-500;
+
+      &::before {
+        content: '';
+
+        @apply absolute inset-1 rounded-full bg-blue-950;
+      }
+    }
+
+    & > li.slick-active > button {
+      @apply w-10;
+
+      &::before {
+        @apply bg-transparent;
+      }
+    }
+  }
+}
+
+.navigation {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(
+      to right,
+      transparent 10%,
+      theme('colors.white') 50%,
+      transparent 90%
+    );
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
 }
 
 .navigation.is-open {
@@ -31,4 +104,20 @@
   to {
     transform: translateY(-100%);
   }
+}
+
+.grd-border {
+  background-clip: border-box;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(
+    to bottom,
+    theme('colors.blue.100'),
+    theme('colors.blue.800')
+  );
+}
+
+.bg-radial-gradient {
+  background: radial-gradient(ellipse at bottom, #1d2f4a, transparent);
 }
