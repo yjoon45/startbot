@@ -9,8 +9,8 @@ dependencies:
     specifier: ^1.6.40
     version: 1.6.40
   aos:
-    specifier: ^2.3.4
-    version: 2.3.4
+    specifier: 3.0.0-beta.6
+    version: 3.0.0-beta.6
   jquery:
     specifier: ^3.7.1
     version: 3.7.1
@@ -40,6 +40,9 @@ devDependencies:
   '@rollup/plugin-typescript':
     specifier: ^11.1.5
     version: 11.1.5(rollup@3.29.4)(typescript@5.3.3)
+  '@types/aos':
+    specifier: ^3.0.7
+    version: 3.0.7
   '@types/jquery':
     specifier: ^3.5.29
     version: 3.5.29
@@ -55,6 +58,9 @@ devDependencies:
   postcss:
     specifier: ^8.4.32
     version: 8.4.32
+  postcss-nested:
+    specifier: ^6.0.1
+    version: 6.0.1(postcss@8.4.32)
   rollup:
     specifier: ^3.29.4
     version: 3.29.4
@@ -1478,6 +1484,10 @@ packages:
     resolution: {integrity: sha512-+9jVqKhRSpsc591z5vX+X5Yyw+he/HCB4iQ/RYxw35CEPaY1gnsNE43nf9n9AaYjAQrTiI/mOwKUKdUs9vf7Xg==}
     dev: true
 
+  /@types/aos@3.0.7:
+    resolution: {integrity: sha512-sEhyFqvKauUJZDbvAB3Pggynrq6g+2PS4XB3tmUr+mDL1gfDJnwslUC4QQ7/l8UD+LWpr3RxZVR/rHoZrLqZVg==}
+    dev: true
+
   /@types/cookie@0.4.1:
     resolution: {integrity: sha512-XW/Aa8APYr6jSVVA1y/DEIZX0/GMKLEVekNG727R8cs56ahETkRAy/3DR7+fJyh7oUgGwNQaRfXCun0+KbWY7Q==}
     dev: true
@@ -1571,8 +1581,8 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /aos@2.3.4:
-    resolution: {integrity: sha512-zh/ahtR2yME4I51z8IttIt4lC1Nw0ktsFtmeDzID1m9naJnWXhCoARaCgNOGXb5CLy3zm+wqmRAEgMYB5E2HUw==}
+  /aos@3.0.0-beta.6:
+    resolution: {integrity: sha512-VLWrpq8bfAWcetynVHMMrqdC+89Qq/Ym6UBJbHB4crIwp3RR8uq1dNGgsFzoDl03S43rlVMK+na3r5+oUCZsYw==}
     dependencies:
       classlist-polyfill: 1.2.0
       lodash.debounce: 4.0.8

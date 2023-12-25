@@ -19,17 +19,21 @@
       src="images/img-3823.webp"
       alt=""
     />
-    <header class="container flex items-center lg:pt-8 lg:gap-4 lg:mb-20">
+
+    <header
+      data-aos="fade-in"
+      class="container flex items-center pt-8 lg:gap-4 lg:mb-20 mb-8"
+    >
       <a href="/">
         <img
-          class="w-32 aspect-square object-contain"
+          class="xl:w-32 w-28 aspect-square object-contain"
           src="images/logo.png"
           alt="Starbot"
         />
       </a>
 
       <nav
-        class="flex-1 flex items-center justify-center text-center navigation"
+        class="xl:flex-1 xl:flex xl:flex-row flex-col items-center justify-center text-center navigation xl:relative fixed top-0 inset-0 z-50 bg-blue-950 bg-[url(../images/img-3823.webp)] hidden"
       >
         <a
           class="uppercase transition-colors text-lg py-6 px-3 hover:text-white text-blue-50"
@@ -61,27 +65,79 @@
         >
           &#9679; Rewards
         </a>
+        <a
+          class="xl:hidden block font-bold py-4 px-10 text-lg text-black uppercase rounded-full from-slate-50 to-slate-300 bg-gradient-to-b hover:from-slate-300 hover:to-slate-50"
+          href="#"
+        >
+          Get Started
+        </a>
+        <button
+          type="button"
+          class="w-10 h-10 flex xl:hidden absolute top-3 right-3 navigation-close"
+        >
+          <span class="sr-only">Close Navigation</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-ful h-full m-auto"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
       </nav>
+
       <a
-        class="inline-block font-bold py-4 px-10 text-lg text-black uppercase rounded-full from-slate-50 to-slate-300 bg-gradient-to-b hover:from-slate-300 hover:to-slate-50"
+        class="hidden xl:inline-block font-bold py-4 px-10 text-lg text-black uppercase rounded-full from-slate-50 to-slate-300 bg-gradient-to-b hover:from-slate-300 hover:to-slate-50"
         href="#"
       >
         Get Started
       </a>
+
+      <button
+        type="button"
+        class="xl:hidden shrink-1 flex ml-auto w-10 h-10 navigation-open"
+      >
+        <span class="sr-only">Open Navigation</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="m-auto w-full h-full"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5"
+          />
+        </svg>
+      </button>
     </header>
 
     <main>
-      <section class="container flex justify-between items-center">
+      <section
+        data-aos="fade-up"
+        class="container flex md:flex-row flex-col gap-10 justify-between items-center"
+      >
         <img
-          class="aspect-square object-contain lg:w-[530px]"
+          data-aos="fade-in"
+          class="aspect-square object-contain lg:w-[530px] md:w-[330px] w-[200px] mx-auto"
           src="images/img-9090.webp"
           alt=""
         />
-        <div>
+        <div class="text-center md:text-start">
           <h1
-            class="font-bold lg:text-[calc(80*0.1vw)] uppercase leading-none mb-6"
+            class="font-bold text-[calc(80*0.1vw)] uppercase leading-none mb-6"
           >
-            All-Star <br />
+            All-Star <br class="hidden md:block" />
             Trading <br />
             Platform
           </h1>
@@ -98,16 +154,17 @@
       </section>
 
       <img
-        class="mix-blend-luminosity max-w-xl -mt-72 -z-10 absolute left-0 pointer-events-none select-none"
+        loading="lazy"
+        class="mix-blend-luminosity md:max-w-xl max-w-full md:-mt-72 -mt-64 -z-10 absolute left-0 pointer-events-none select-none"
         src="images/img-2345.webp"
         alt=""
       />
 
-      <section class="container lg:my-60">
+      <section data-aos="fade-up" class="container lg:my-60 my-40">
         <div class="relative mx-auto table">
           <img
             loading="lazy"
-            class="aspect-video max-w-[750px] border-blue-100 border-2 rounded-lg"
+            class="aspect-video lg:max-w-[750px] max-w-full md:max-w-[550px] border-blue-100 border-2 rounded-lg"
             src="images/img-4558.webp"
             alt=""
           />
@@ -138,17 +195,18 @@
         </div>
       </section>
 
-      <section class="container lg:my-60">
+      <section class="container lg:my-60 my-40">
         <div class="max-w-5xl mx-auto">
-          <h2 class="text-4xl text-center mb-9">
+          <h2 class="md:text-4xl text-3xl text-center mb-9">
             Our mission is to provide you with the safest most simple to use
             trading experience in the world.
           </h2>
-          <h3 class="text-center font-bold text-5xl lg:mb-12">
+          <h3 class="text-center font-bold md:text-5xl text-3xl mb-10 md:mb-12">
             Starbot Features
           </h3>
-          <div class="grid gap-x-12 gap-y-8 grid-cols-3">
+          <div class="grid gap-x-12 gap-y-8 lg:grid-cols-3 md:grid-cols-2">
             <div
+              data-aos="fade-up"
               class="bg-gradient-to-b from-blue-100 to-blue-800 rounded-md p-1"
             >
               <div class="bg-blue-950 py-6 text-center">
@@ -166,6 +224,8 @@
               </div>
             </div>
             <div
+              data-aos="fade-up"
+              data-aos-delay="50"
               class="bg-gradient-to-b from-blue-100 to-blue-800 rounded-md p-1"
             >
               <div class="bg-blue-950 py-6 text-center">
@@ -183,6 +243,8 @@
               </div>
             </div>
             <div
+              data-aos="fade-up"
+              data-aos-delay="100"
               class="bg-gradient-to-b from-blue-100 to-blue-800 rounded-md p-1"
             >
               <div class="bg-blue-950 py-6 text-center">
@@ -200,6 +262,8 @@
               </div>
             </div>
             <div
+              data-aos="fade-up"
+              data-aos-delay="150"
               class="bg-gradient-to-b from-blue-100 to-blue-800 rounded-md p-1"
             >
               <div class="bg-blue-950 py-6 text-center">
@@ -217,6 +281,8 @@
               </div>
             </div>
             <div
+              data-aos="fade-up"
+              data-aos-delay="200"
               class="bg-gradient-to-b from-blue-100 to-blue-800 rounded-md p-1"
             >
               <div class="bg-blue-950 py-6 text-center">
@@ -234,6 +300,8 @@
               </div>
             </div>
             <div
+              data-aos="fade-up"
+              data-aos-delay="250"
               class="bg-gradient-to-b from-blue-100 to-blue-800 rounded-md p-1"
             >
               <div class="bg-blue-950 py-6 text-center">
@@ -254,59 +322,69 @@
         </div>
       </section>
 
-      <section class="container lg:my-40">
+      <section data-aos="fade-up" class="container lg:my-40 my-32">
         <div class="table mx-auto relative overflow-hidden mb-8">
           <img
-            class="aspect-[16/5] w-full object-cover rounded-lg"
+            class="lg:aspect-[16/5] md:aspect-[16/10] aspect-square w-full object-cover rounded-lg"
             src="images/bg-6789.webp"
             alt=""
           />
           <div
-            class="slider absolute h-full top-0 left-1/2 -translate-x-1/2 w-full max-w-screen-md text-center py-12"
+            class="slider absolute h-full top-0 left-1/2 -translate-x-1/2 w-full max-w-screen-md text-center md:py-12 py-6"
           >
-            <div class="feature-slider">
+            <div class="feature-slider px-5">
               <div>
-                <h2 class="uppercase font-bold text-5xl text-center mb-4">
+                <h2
+                  class="uppercase font-bold md:text-5xl text-3xl text-center mb-4"
+                >
                   Simple
                 </h2>
-                <p class="text-center font-semibold text-2xl">
+                <p class="text-center font-semibold text-base md:text-2xl">
                   Anyone can learn how to use Starbot, thanks to our intuitive
                   design and all the tutorials you need to get started.
                 </p>
               </div>
               <div>
-                <h2 class="uppercase font-bold text-5xl text-center mb-4">
+                <h2
+                  class="uppercase font-bold md:text-5xl text-3xl text-center mb-4"
+                >
                   Secure
                 </h2>
-                <p class="text-center font-semibold text-2xl">
+                <p class="text-center font-semibold text-base md:text-2xl">
                   Starbot applies advanced encryption to keep your assets safe
                   and offers features that help protect you against scams.
                 </p>
               </div>
               <div>
-                <h2 class="uppercase font-bold text-5xl text-center mb-4">
+                <h2
+                  class="uppercase font-bold md:text-5xl text-3xl text-center mb-4"
+                >
                   Intelligent
                 </h2>
-                <p class="text-center font-semibold text-2xl">
+                <p class="text-center font-semibold text-base md:text-2xl">
                   Utilizing advanced Machine Learning and AI strategies, Starbot
                   elevates your trading with a variety of helpful data
                   analytics.
                 </p>
               </div>
               <div>
-                <h2 class="uppercase font-bold text-5xl text-center mb-4">
+                <h2
+                  class="uppercase font-bold md:text-5xl text-3xl text-center mb-4"
+                >
                   Powerful
                 </h2>
-                <p class="text-center font-semibold text-2xl">
+                <p class="text-center font-semibold text-base md:text-2xl">
                   With Starbot's advanced blockchain tech, fast transaction
                   speeds and a wide range of features are at your fingertips.
                 </p>
               </div>
               <div>
-                <h2 class="uppercase font-bold text-5xl text-center mb-4">
+                <h2
+                  class="uppercase font-bold md:text-5xl text-3xl text-center mb-4"
+                >
                   Affordable
                 </h2>
-                <p class="text-center font-semibold text-2xl">
+                <p class="text-center font-semibold text-base md:text-2xl">
                   Starbot maintains a fee of 1% on all trades you make using the
                   platform. This funds our development and rewards our loyal
                   users.
@@ -315,7 +393,8 @@
             </div>
 
             <img
-              class="mx-auto add-transition aspect-square max-w-[525px] object-cover slider-logo absolute left-0 right-0 bottom-0 pointer-events-none select-none"
+              loading="lazy"
+              class="mx-auto add-transition aspect-square md:max-w-[525px] max-w-[350px] object-cover slider-logo absolute left-0 right-0 bottom-0 pointer-events-none select-none"
               src="images/logo-big.webp"
               alt=""
             />
@@ -324,20 +403,21 @@
         <div class="feature-slider-dots"></div>
       </section>
 
-      <section class="container lg:my-40">
+      <section data-aos="fade-up" class="container lg:my-40 my-32">
         <h3 class="text-center font-bold text-5xl mb-4">Tokenomics</h3>
         <p class="text-xl text-center mb-20">
           75% of all revenue is distributed to STAR token holders and
           affiliates.
         </p>
-        <div class="flex items-center lg:gap-20">
-          <div class="shrink-0 basis-80">
+        <div class="flex md:flex-row flex-col items-center gap-20">
+          <div class="shrink-0 w-full md:w-80">
             <div
               class="bg-gradient-to-b from-blue-100 to-blue-800 rounded-md p-1 mb-6"
             >
               <div class="bg-blue-950 py-6 text-center">
-                <h2 class="text-center text-2xl">
-                  <big class="font-bold text-5xl">10 Million</big><br />
+                <h2 class="text-center md:text-2xl text-xl">
+                  <big class="font-bold md:text-5xl text-4xl">10 Million</big
+                  ><br />
                   STAR tokens
                 </h2>
               </div>
@@ -346,8 +426,8 @@
               class="bg-gradient-to-b from-blue-100 to-blue-800 rounded-md p-1"
             >
               <div class="bg-blue-950 py-6 text-center">
-                <h2 class="text-center text-2xl">
-                  <big class="font-bold text-5xl">5% </big><br />
+                <h2 class="text-center md:text-2xl text-xl">
+                  <big class="font-bold md:text-5xl text-4xl">5% </big><br />
                   Buy and sell tax
                 </h2>
               </div>
@@ -364,16 +444,18 @@
         </div>
       </section>
 
-      <section class="text-center container lg:my-40">
+      <section data-aos="fade-up" class="text-center container lg:my-40 my-32">
         <h2 class="font-bold text-3xl mb-7">Starbot Affiliates</h2>
-        <h3 class="font-bold text-5xl mb-7">
+        <h3 class="font-bold md:text-5xl text-3xl mb-7">
           Help Starbot grow, get
-          <span class="text-4xl text-blue-700">rewarded!</span>
+          <span class="md:text-4xl text-2xl text-blue-700">rewarded!</span>
         </h3>
         <p class="font-bold text-2xl leading-loose">
           We offer a highly competitive affiliate program, allowing you to
           directly receive up to
-          <span class="block text-5xl font-semibold text-blue-700 my-3">
+          <span
+            class="block md:text-5xl text-3xl font-semibold text-blue-700 md:my-3 my-2"
+          >
             25% of the 1% trading fee
           </span>
           paid by the user you referred.
@@ -381,15 +463,16 @@
       </section>
 
       <img
-        class="absolute left-0 bottom-20 w-full object-cover select-none pointer-events-none -z-10"
+        loading="lazy"
+        class="absolute left-0 md:bottom-20 bottom-0 w-full aspect-square md:aspect-auto object-cover select-none pointer-events-none -z-10"
         src="images/bg-338.webp"
         alt=""
       />
 
-      <section class="container lg:my-40">
+      <section class="container lg:my-40 my-32">
         <div class="rounded-md overflow-hidden">
-          <div class="text-center grd-border py-8">
-            <h2 class="text-5xl italic mb-8">
+          <div class="text-center grd-border py-8 px-5">
+            <h2 class="md:text-5xl text-2xl italic mb-8">
               A galaxy full of trading opportunities awaits.
             </h2>
             <a
@@ -405,16 +488,25 @@
 
     <footer class="bg-radial-gradient">
       <div class="container">
-        <nav class="flex gap-12 justify-center mb-6">
-          <a class="text-current text-xl uppercase" href="#">Youtube Channel</a>
-          <a class="text-current text-xl uppercase" href="#">Telegram Group</a>
-          <a class="text-current text-xl uppercase" href="#">Twitter</a>
+        <nav
+          class="flex md:gap-12 gap-1 text-center justify-between md:justify-center mb-6"
+        >
+          <a class="text-current md:text-xl text-base uppercase" href="#"
+            >Youtube Channel</a
+          >
+          <a class="text-current md:text-xl text-base uppercase" href="#"
+            >Telegram Group</a
+          >
+          <a class="text-current md:text-xl text-base uppercase" href="#"
+            >Twitter</a
+          >
         </nav>
-        <p class="text-center text-lg mb-12">
+        <p class="text-center md:text-lg text-base mb-12">
           © 2023 Starbot. All Rights Reserved
         </p>
         <img
-          class="mx-auto aspect-[16/10] object-contain max-w-96"
+          loading="lazy"
+          class="mx-auto aspect-[16/10] object-contain md:max-w-96 max-w-60"
           src="images/logo-footer.webp"
           alt=""
         />

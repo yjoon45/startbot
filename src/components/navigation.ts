@@ -1,3 +1,5 @@
+import { NavigationInterface } from '../@types/components/navigation';
+
 export const Navigation: NavigationInterface = {
   nav: document.querySelector('.navigation'),
   openTrigger: document.querySelector('.navigation-open'),
@@ -39,13 +41,3 @@ export const Navigation: NavigationInterface = {
     );
   },
 };
-
-interface NavigationInterface {
-  nav: null | HTMLElement;
-  openTrigger: null | HTMLButtonElement;
-  closeTrigger: null | HTMLButtonElement;
-  body: null | HTMLBodyElement;
-  init: () => void;
-  handleNavigation: () => void;
-  removeAnimationClasses: (e: AnimationEvent) => void;
-}
