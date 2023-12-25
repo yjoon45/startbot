@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Starbot" />
+    <meta name="theme-color" content="#09111c" />
     <title>Starbot</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,6 +21,7 @@
     <picture>
       <source srcset="images/img-3823.webp" media="(min-width: 992px)" />
       <img
+        fetchpriority="high"
         class="absolute top-0 left-0 w-full -z-10 mix-blend-lighten object-cover pointer-events-none select-none"
         src="images/img-3823-sm.webp"
         alt=""
@@ -187,6 +190,7 @@
             type="button"
             class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2"
           >
+            <span class="sr-only">Play Video</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -543,6 +547,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="js/main.js"></script>
+    <script defer src="js/main.js"></script>
   </body>
 </html>
