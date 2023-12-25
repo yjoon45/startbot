@@ -7,18 +7,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
-    <link rel="stylesheet" href="css/main.bundle.css" />
+    <link fetchpriority="highest" rel="stylesheet" href="css/main.bundle.css" />
     <link rel="icon" href="images/logo.png" type="image/x-icon" />
   </head>
   <body class="text-blue-100 relative bg-body">
-    <img
-      class="absolute top-0 left-0 w-full -z-10 mix-blend-lighten object-cover pointer-events-none select-none"
-      src="images/img-3823.webp"
-      alt=""
-    />
+    <picture>
+      <source srcset="images/img-3823.webp" media="(min-width: 992px)" />
+      <img
+        class="absolute top-0 left-0 w-full -z-10 mix-blend-lighten object-cover pointer-events-none select-none"
+        src="images/img-3823-sm.webp"
+        alt=""
+      />
+    </picture>
 
     <header
       data-aos="fade-in"
@@ -127,12 +132,15 @@
         data-aos="fade-up"
         class="container flex md:flex-row flex-col gap-10 justify-between items-center"
       >
-        <img
-          data-aos="fade-in"
-          class="aspect-square object-contain lg:w-[530px] md:w-[330px] w-[200px] mx-auto"
-          src="images/img-9090.webp"
-          alt=""
-        />
+        <picture>
+          <source srcset="images/img-9090.webp" media="(min-width: 992px)" />
+          <img
+            data-aos="fade-in"
+            class="aspect-square object-contain lg:w-[530px] md:w-[330px] w-[200px] mx-auto"
+            src="images/img-9090-sm.webp"
+            alt=""
+          />
+        </picture>
         <div class="text-center md:text-start">
           <h1
             class="font-bold text-[calc(80*0.1vw)] uppercase leading-none mb-6"
@@ -153,21 +161,28 @@
         </div>
       </section>
 
-      <img
-        loading="lazy"
-        class="mix-blend-luminosity md:max-w-xl max-w-full md:-mt-72 -mt-64 -z-10 absolute left-0 pointer-events-none select-none"
-        src="images/img-2345.webp"
-        alt=""
-      />
+      <picture>
+        <source srcset="images/img-2345.webp" media="(min-width: 992px)" />
+        <img
+          loading="lazy"
+          class="mix-blend-luminosity md:max-w-xl max-w-full lg:-mt-72 -mt-40 -z-10 absolute left-0 pointer-events-none select-none"
+          src="images/img-2345-sm.webp"
+          alt=""
+        />
+      </picture>
 
       <section data-aos="fade-up" class="container lg:my-60 my-40">
         <div class="relative mx-auto table">
-          <img
-            loading="lazy"
-            class="aspect-video lg:max-w-[750px] max-w-full md:max-w-[550px] border-blue-100 border-2 rounded-lg"
-            src="images/img-4558.webp"
-            alt=""
-          />
+          <picture>
+            <source srcset="images/img-4558.webp" media="(min-width: 992px)" />
+            <img
+              loading="lazy"
+              class="aspect-video lg:max-w-[750px] max-w-full md:max-w-[550px] border-blue-100 border-2 rounded-lg"
+              src="images/img-4558-sm.webp"
+              alt=""
+            />
+          </picture>
+
           <button
             type="button"
             class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2"
@@ -324,11 +339,14 @@
 
       <section data-aos="fade-up" class="container lg:my-40 my-32">
         <div class="table mx-auto relative overflow-hidden mb-8">
-          <img
-            class="lg:aspect-[16/5] md:aspect-[16/10] aspect-square w-full object-cover rounded-lg"
-            src="images/bg-6789.webp"
-            alt=""
-          />
+          <picture>
+            <source srcset="images/bg-6789.webp" media="(min-width: 992px)" />
+            <img
+              class="lg:aspect-[16/5] md:aspect-[16/10] aspect-square w-full object-cover rounded-lg"
+              src="images/bg-6789-sm.webp"
+              alt=""
+            />
+          </picture>
           <div
             class="slider absolute h-full top-0 left-1/2 -translate-x-1/2 w-full max-w-screen-md text-center md:py-12 py-6"
           >
