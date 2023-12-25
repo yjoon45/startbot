@@ -25,6 +25,9 @@ devDependencies:
   '@babel/preset-typescript':
     specifier: ^7.23.3
     version: 7.23.3(@babel/core@7.23.6)
+  '@fullhuman/postcss-purgecss':
+    specifier: ^5.0.0
+    version: 5.0.0(postcss@8.4.32)
   '@rollup/plugin-babel':
     specifier: ^6.0.4
     version: 6.0.4(@babel/core@7.23.6)(rollup@3.29.4)
@@ -61,6 +64,9 @@ devDependencies:
   postcss-nested:
     specifier: ^6.0.1
     version: 6.0.1(postcss@8.4.32)
+  purgecss:
+    specifier: ^5.0.0
+    version: 5.0.0
   rollup:
     specifier: ^3.29.4
     version: 3.29.4
@@ -1299,6 +1305,15 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
+  /@fullhuman/postcss-purgecss@5.0.0(postcss@8.4.32):
+    resolution: {integrity: sha512-onDS/b/2pMRzqSoj4qOs2tYFmOpaspjTAgvACIHMPiicu1ptajiBruTrjBzTKdxWdX0ldaBb7wj8nEaTLyFkJw==}
+    peerDependencies:
+      postcss: ^8.0.0
+    dependencies:
+      postcss: 8.4.32
+      purgecss: 5.0.0
+    dev: true
+
   /@isaacs/cliui@8.0.2:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
     engines: {node: '>=12'}
@@ -1871,6 +1886,11 @@ packages:
   /commander@4.1.1:
     resolution: {integrity: sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==}
     engines: {node: '>= 6'}
+    dev: true
+
+  /commander@9.5.0:
+    resolution: {integrity: sha512-KRs7WVDKg86PWiuAqhDrAQnTXZKraVcCc6vFdL14qrZ/DcWwuRo7VoiYXalXO7S5GKpqYiVEwCbgFDfxNHKJBQ==}
+    engines: {node: ^12.20.0 || >=14}
     dev: true
 
   /commondir@1.0.1:
@@ -2805,6 +2825,16 @@ packages:
       nanoid: 3.3.7
       picocolors: 1.0.0
       source-map-js: 1.0.2
+
+  /purgecss@5.0.0:
+    resolution: {integrity: sha512-RAnuxrGuVyLLTr8uMbKaxDRGWMgK5CCYDfRyUNNcaz5P3kGgD2b7ymQGYEyo2ST7Tl/ScwFgf5l3slKMxHSbrw==}
+    hasBin: true
+    dependencies:
+      commander: 9.5.0
+      glob: 8.1.0
+      postcss: 8.4.32
+      postcss-selector-parser: 6.0.13
+    dev: true
 
   /queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
