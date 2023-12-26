@@ -125,6 +125,6 @@
   }
 
   .bg-radial-gradient {
-    background: radial-gradient(ellipse at bottom, #1d2f4a, transparent);
+    background: radial-gradient(ellipse at bottom, #1d2f4a, transparent 60%);
   }
 }
