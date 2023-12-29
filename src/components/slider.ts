@@ -24,6 +24,6 @@ $(() => {
     const angle = 360 / slides;
     let ang = angle * currentSlide;
 
-    sliderLogo.addClass('add-transition').css({ '--angle': `${ang}deg` });
+    sliderLogo.addClass('add-transition').css({ '--angle': `-${ang}deg` });
   }
 });
