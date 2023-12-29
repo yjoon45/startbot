@@ -18,6 +18,19 @@
     <link rel="icon" href="images/logo.png" type="image/x-icon" />
   </head>
   <body class="text-blue-100 relative bg-body">
+    <section class="shooting-star">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </section>
+
     <picture>
       <source srcset="images/img-3823.webp" media="(min-width: 992px)" />
       <img
@@ -44,31 +57,37 @@
         class="xl:flex-1 xl:flex xl:flex-row flex-col items-center justify-center text-center navigation xl:relative fixed top-0 inset-0 z-50 bg-blue-950 bg-[url(../images/img-3823.webp)] hidden"
       >
         <a
-          class="uppercase transition-colors text-lg py-6 px-3 hover:text-white text-blue-50"
+          class="xl:w-auto w-full uppercase transition-colors text-lg py-6 px-3 hover:text-white text-blue-50"
           href="#"
         >
           &#9679; About
         </a>
         <a
-          class="uppercase transition-colors text-lg py-6 px-3 hover:text-white text-blue-50"
+          class="xl:w-auto w-full uppercase transition-colors text-lg py-6 px-3 hover:text-white text-blue-50"
           href="#"
         >
           &#9679; Buy $STAR
         </a>
         <a
-          class="uppercase transition-colors text-lg py-6 px-3 hover:text-white text-blue-50"
+          class="xl:w-auto w-full uppercase transition-colors text-lg py-6 px-3 hover:text-white text-blue-50"
           href="#"
         >
           &#9679; Telegram Group
         </a>
         <a
-          class="uppercase transition-colors text-lg py-6 px-3 hover:text-white text-blue-50"
+          class="xl:w-auto w-full uppercase transition-colors text-lg py-6 px-3 hover:text-white text-blue-50 flex items-center gap-1 justify-center"
+          href="#"
+        >
+          &#9679; <img src="images/twitter-x.svg" alt="X" />
+        </a>
+        <a
+          class="xl:w-auto w-full uppercase transition-colors text-lg py-6 px-3 hover:text-white text-blue-50"
           href="#"
         >
           &#9679; Tutorials
         </a>
         <a
-          class="uppercase transition-colors text-lg py-6 px-3 hover:text-white text-blue-50"
+          class="xl:w-auto w-full uppercase transition-colors text-lg py-6 px-3 hover:text-white text-blue-50"
           href="#"
         >
           &#9679; Rewards
@@ -135,15 +154,20 @@
         data-aos="fade-up"
         class="container flex md:flex-row flex-col gap-10 justify-between items-center"
       >
-        <picture>
-          <source srcset="images/img-9090.webp" media="(min-width: 992px)" />
-          <img
-            data-aos="fade-in"
-            class="aspect-square object-contain lg:w-[530px] md:w-[330px] w-[200px] mx-auto"
-            src="images/img-9090-sm.webp"
-            alt=""
-          />
-        </picture>
+        <div class="relative">
+          <div
+            class="md:aspect-[1/1] aspect-[5/4] lg:w-[395px] w-[300px] mx-auto overflow-hidden absolute -z-10 lg:-left-[140px] lg:top-[130px] -left-[100px] top-[90px] md:top-[50px]"
+          >
+            <img
+              fetchpriority="high"
+              src="images/spritesheet.webp"
+              class="logo-animation max-w-none h-full w-auto will-change-transform"
+              alt=""
+            />
+          </div>
+          <img src="images/logo-flat-big.webp" alt="" />
+        </div>
+
         <div class="text-center md:text-start">
           <h1
             class="font-bold text-[calc(80*0.1vw)] uppercase leading-none mb-6"
@@ -217,7 +241,7 @@
       <section class="container lg:my-60 my-40">
         <div class="max-w-5xl mx-auto">
           <h2 class="md:text-4xl text-3xl text-center mb-9">
-            Our mission is to provide you with the safest most simple to use
+            Our mission is to provide you with the safest, most simple to use
             trading experience in the world.
           </h2>
           <h3 class="text-center font-bold md:text-5xl text-3xl mb-10 md:mb-12">
@@ -416,7 +440,7 @@
 
             <img
               loading="lazy"
-              class="mx-auto add-transition aspect-square md:max-w-[525px] max-w-[350px] object-cover slider-logo absolute left-0 right-0 bottom-0 pointer-events-none select-none"
+              class="mx-auto aspect-square md:max-w-[525px] max-w-[350px] object-cover slider-logo absolute left-0 right-0 bottom-0 pointer-events-none select-none"
               src="images/logo-big.webp"
               alt=""
             />
@@ -459,7 +483,7 @@
             <img
               loading="lazy"
               class="aspect-[16/7] object-contain w-full"
-              src="images/img-3989.webp"
+              src="images/img-3989.svg"
               alt=""
             />
           </div>
@@ -513,15 +537,51 @@
         <nav
           class="flex md:gap-12 gap-1 text-center justify-between md:justify-center mb-6"
         >
-          <a class="text-current md:text-xl text-base uppercase" href="#"
-            >Youtube Channel</a
+          <a
+            class="text-current text-blue-50 hover:text-white md:text-xl text-base uppercase"
+            href="#"
           >
-          <a class="text-current md:text-xl text-base uppercase" href="#"
-            >Telegram Group</a
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              class="w-10 h-10"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408z"
+              />
+            </svg>
+          </a>
+          <a
+            class="text-current text-blue-50 hover:text-white md:text-xl text-base uppercase"
+            href="#"
           >
-          <a class="text-current md:text-xl text-base uppercase" href="#"
-            >Twitter</a
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              class="w-10 h-10"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"
+              />
+            </svg>
+          </a>
+          <a
+            class="text-current text-blue-50 hover:text-white md:text-xl text-base uppercase"
+            href="#"
           >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-9 h-9"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"
+              />
+            </svg>
+          </a>
         </nav>
         <p class="text-center md:text-lg text-base mb-12">
           © 2023 Starbot. All Rights Reserved
