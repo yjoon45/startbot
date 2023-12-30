@@ -14,7 +14,7 @@ $(() => {
   const sliderLogo = featureSlider.next('.slider-logo');
   let currentSlide = 0;
 
-  featureSlider.on('afterChange', handleRotation);
+  featureSlider.on('beforeChange', handleRotation);
 
   function handleRotation(_slick: unknown) {
     currentSlide++;

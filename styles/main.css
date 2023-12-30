@@ -111,17 +111,12 @@
   }
 }
 
-@layer utilities {
+@layer components {
   .grd-border {
     background-clip: border-box;
     border: 10px solid;
     border-image-slice: 1;
-    border-width: 5px;
-    border-image-source: linear-gradient(
-      to bottom,
-      theme('colors.blue.100'),
-      theme('colors.blue.800')
-    );
+    border-width: 2px;
   }
 
   .bg-radial-gradient {
