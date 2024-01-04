@@ -25,19 +25,21 @@ export const Navigation: NavigationInterface = {
   },
 
   init() {
-    this.openTrigger?.addEventListener(
-      'click',
-      this.handleNavigation.bind(this)
-    );
+    $(() => {
+      this.openTrigger?.addEventListener(
+        'click',
+        this.handleNavigation.bind(this)
+      );
 
-    this.closeTrigger?.addEventListener(
-      'click',
-      this.handleNavigation.bind(this)
-    );
+      this.closeTrigger?.addEventListener(
+        'click',
+        this.handleNavigation.bind(this)
+      );
 
-    this.nav?.addEventListener(
-      'animationend',
-      this.removeAnimationClasses.bind(this)
-    );
+      this.nav?.addEventListener(
+        'animationend',
+        this.removeAnimationClasses.bind(this)
+      );
+    });
   },
 };

@@ -34,6 +34,8 @@
         class="absolute top-0 left-0 w-full -z-10 mix-blend-lighten object-cover pointer-events-none select-none"
         src="images/img-3823-sm.webp"
         alt=""
+        width="100%"
+        height="100%"
       />
     </picture>
 
@@ -41,41 +43,43 @@
       data-aos="fade-in"
       class="container flex items-center pt-8 lg:gap-4 lg:mb-20 mb-8"
     >
-      <a href="/">
-        <img
-          class="xl:w-32 w-28 aspect-square object-contain"
-          src="images/logo.png"
-          alt="Starbot"
-        />
-      </a>
+      <img
+        class="xl:w-32 w-28 aspect-square object-contain"
+        src="images/logo.png"
+        alt="Starbot"
+      />
 
       <nav
         class="xl:flex-1 xl:flex xl:flex-row flex-col items-center justify-center text-center navigation xl:relative fixed top-0 inset-0 z-50 bg-blue-950 bg-[url(../images/img-3823.webp)] hidden"
       >
         <a
           class="xl:w-auto w-full uppercase transition-colors text-lg py-6 px-3 hover:text-white text-blue-50"
-          href="#"
+          href="#section-features"
         >
           &#9679; About
         </a>
         <a
+          class="xl:w-auto w-full uppercase transition-colors text-lg py-6 px-3 hover:text-white text-blue-50 flex items-center gap-1 justify-center"
+          href="https://twitter.com/StarbotAI"
+          target="_blank"
+        >
+          &#9679; <img src="images/twitter-x.svg" alt="StarbotAI on X" />
+        </a>
+        <a
           class="xl:w-auto w-full uppercase transition-colors text-lg py-6 px-3 hover:text-white text-blue-50"
-          href="#"
+          href="https://app.uniswap.org/tokens/ethereum/0x554e43143B3A28518Db6d944e74FfFd4751743b1"
+          target="_blank"
         >
           &#9679; Buy $STAR
         </a>
         <a
           class="xl:w-auto w-full uppercase transition-colors text-lg py-6 px-3 hover:text-white text-blue-50"
-          href="#"
+          href="https://t.me/StarbotAI"
+          target="_blank"
         >
           &#9679; Telegram Group
         </a>
-        <a
-          class="xl:w-auto w-full uppercase transition-colors text-lg py-6 px-3 hover:text-white text-blue-50 flex items-center gap-1 justify-center"
-          href="#"
-        >
-          &#9679; <img src="images/twitter-x.svg" alt="X" />
-        </a>
+
         <a
           class="xl:w-auto w-full uppercase transition-colors text-lg py-6 px-3 hover:text-white text-blue-50"
           href="#"
@@ -84,13 +88,15 @@
         </a>
         <a
           class="xl:w-auto w-full uppercase transition-colors text-lg py-6 px-3 hover:text-white text-blue-50"
-          href="#"
+          href="https://t.me/StarBot_ai_bot"
+          target="_blank"
         >
           &#9679; Rewards
         </a>
         <a
           class="xl:hidden block font-bold py-4 px-10 text-lg text-black uppercase rounded-full from-slate-50 to-slate-300 bg-gradient-to-b hover:from-slate-300 hover:to-slate-50"
-          href="#"
+          href="https://t.me/StarBot_ai_bot"
+          target="_blank"
         >
           Get Started
         </a>
@@ -118,7 +124,8 @@
 
       <a
         class="hidden xl:inline-block font-bold py-4 px-10 text-lg text-black uppercase rounded-full from-slate-50 to-slate-300 bg-gradient-to-b hover:from-slate-300 hover:to-slate-50"
-        href="#"
+        href="https://t.me/StarBot_ai_bot"
+        target="_blank"
       >
         Get Started
       </a>
@@ -146,47 +153,49 @@
     </header>
 
     <main>
-      <section
-        data-aos="fade-up"
-        class="container flex md:flex-row flex-col gap-10 justify-between items-center"
-      >
-        <div class="relative">
-          <div
-            class="md:aspect-[1/1] aspect-[5/4] lg:w-[395px] w-[300px] mx-auto overflow-hidden absolute -z-10 lg:-left-[140px] lg:top-[130px] -left-[100px] top-[90px] md:top-[50px]"
-          >
-            <img
-              fetchpriority="high"
-              src="images/spritesheet.webp"
-              class="logo-animation max-w-none h-full w-auto will-change-transform"
-              alt=""
-            />
-          </div>
-          <img src="images/logo-flat-big.webp" alt="" />
-        </div>
+      <section class="grid lg:grid-cols-2 lg:gap-20 gap-8">
+        <video
+          muted
+          autoplay
+          loop
+          src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+          class="aspect-video w-full h-full object-cover mix-blend-lighten"
+        ></video>
 
-        <div class="text-center md:text-start">
-          <h1
-            class="font-bold text-[calc(80*0.1vw)] uppercase leading-none mb-6"
-          >
-            All-Star <br class="hidden md:block" />
-            Trading <br />
-            Platform
+        <div class="text-center lg:text-start px-5 lg:px-0" data-aos="fade-up">
+          <h1 class="font-bold text-6xl leading-none mb-6">
+            Trade With StartBot
           </h1>
-          <p class="text-2xl mb-6">
-            Starbot makes trading easy, fast and secure
+          <p class="text-3xl mb-6">Making trading profitable, easy, and fun</p>
+          <p class="mb-6 text-2xl">
+            Try Starbot now on Telegram. With our Demo Mode,
+            <br class="hidden lg:block" />
+            you can practice trading for free!
           </p>
-          <a
-            class="inline-block font-bold py-4 px-10 text-lg text-black uppercase rounded-full from-slate-50 to-slate-300 bg-gradient-to-b hover:from-slate-300 hover:to-slate-50"
-            href="#"
-          >
-            Get Started
-          </a>
+          <div class="inline-grid md:grid-cols-2 gap-4 text-center">
+            <a
+              class="inline-block font-bold py-4 px-10 text-lg text-black uppercase rounded-full from-slate-50 to-slate-300 bg-gradient-to-b hover:from-slate-300 hover:to-slate-50"
+              href="https://t.me/StarBot_ai_bot"
+              target="_blank"
+            >
+              Get Started
+            </a>
+            <a
+              class="inline-block font-bold text-white py-4 px-10 text-lg uppercase rounded-full border-2 border-white"
+              target="_blank"
+              href="https://t.me/StarBot_demo_bot"
+            >
+              Open Demo Mode
+            </a>
+          </div>
         </div>
       </section>
 
       <section class="divider-bg">
         <div data-aos="fade-up" class="container lg:my-60 my-40">
-          <div class="relative mx-auto table">
+          <div
+            class="player aspect-video lg:max-w-[750px] overflow-hidden max-w-full md:max-w-[550px] border-blue-100 border-2 rounded-lg relative mx-auto mb-10"
+          >
             <picture>
               <source
                 srcset="images/img-4558.webp"
@@ -194,15 +203,24 @@
               />
               <img
                 loading="lazy"
-                class="aspect-video lg:max-w-[750px] max-w-full md:max-w-[550px] border-blue-100 border-2 rounded-lg"
+                class="w-full h-full object-cover player-poster"
                 src="images/img-4558-sm.webp"
                 alt=""
               />
             </picture>
 
+            <iframe
+              class="w-full h-full hidden player-iframe"
+              width="750"
+              height="418"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            ></iframe>
+
             <button
               type="button"
-              class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2"
+              class="absolute player-trigger w-full h-full top-0 left-0"
+              data-src="https://www.youtube.com/embed/SSo_EIwHSd4"
             >
               <span class="sr-only">Play Video</span>
               <svg
@@ -211,7 +229,7 @@
                 viewBox="0 0 24 24"
                 stroke-width="1"
                 stroke="currentColor"
-                class="w-20 h-20"
+                class="w-20 h-20 mx-auto"
               >
                 <path
                   stroke-linecap="round"
@@ -226,10 +244,13 @@
               </svg>
             </button>
           </div>
+          <p class="text-center text-xl">
+            Bringing you the safest, easiest trading experience in the universe.
+          </p>
         </div>
       </section>
 
-      <section class="container lg:my-60 my-40">
+      <section id="section-features" class="container lg:my-60 my-40">
         <div class="max-w-5xl mx-auto">
           <h2 class="md:text-4xl text-3xl text-center mb-9">
             Our mission is to provide you with the safest, most simple to use
@@ -254,63 +275,6 @@
                 <p class="text-lg">
                   Track your investments and <br class="md:block hidden" />
                   performance
-                </p>
-              </div>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="50"
-              class="bg-gradient-to-b from-blue-100 to-blue-800 rounded-md p-1"
-            >
-              <div class="bg-blue-950 py-6 text-center">
-                <img
-                  loading="lazy"
-                  class="mx-auto aspect-square w-16 object-contain mb-3"
-                  src="images/img-6751.webp"
-                  alt=""
-                />
-                <h3 class="font-bold text-2xl mb-3">Trade STAR</h3>
-                <p class="text-lg">
-                  STAR token holders receive <br class="md:block hidden" />
-                  revenue share
-                </p>
-              </div>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="100"
-              class="bg-gradient-to-b from-blue-100 to-blue-800 rounded-md p-1"
-            >
-              <div class="bg-blue-950 py-6 text-center">
-                <img
-                  loading="lazy"
-                  class="mx-auto aspect-square w-16 object-contain mb-3"
-                  src="images/img-6753.webp"
-                  alt=""
-                />
-                <h3 class="font-bold text-2xl mb-3">Trade Tokens</h3>
-                <p class="text-lg">
-                  Trade any tokens on <br class="md:block hidden" />
-                  Ethereum
-                </p>
-              </div>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="150"
-              class="bg-gradient-to-b from-blue-100 to-blue-800 rounded-md p-1"
-            >
-              <div class="bg-blue-950 py-6 text-center">
-                <img
-                  loading="lazy"
-                  class="mx-auto aspect-square w-16 object-contain mb-3"
-                  src="images/img-6754.webp"
-                  alt=""
-                />
-                <h3 class="font-bold text-2xl mb-3">Affiliate Program</h3>
-                <p class="text-lg">
-                  Earn rewards when someone <br class="md:block hidden" />
-                  uses your link
                 </p>
               </div>
             </div>
@@ -349,6 +313,64 @@
                 <p class="text-lg">
                   Trade from within your <br class="md:block hidden" />
                   Telegram app
+                </p>
+              </div>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-delay="150"
+              class="bg-gradient-to-b from-blue-100 to-blue-800 rounded-md p-1"
+            >
+              <div class="bg-blue-950 py-6 text-center">
+                <img
+                  loading="lazy"
+                  class="mx-auto aspect-square w-16 object-contain mb-3"
+                  src="images/img-6754.webp"
+                  alt=""
+                />
+                <h3 class="font-bold text-2xl mb-3">Affiliate Program</h3>
+                <p class="text-lg">
+                  Earn generous rewards <br class="md:block hidden" />
+                  from your referrals
+                </p>
+              </div>
+            </div>
+
+            <div
+              data-aos="fade-up"
+              data-aos-delay="100"
+              class="bg-gradient-to-b from-blue-100 to-blue-800 rounded-md p-1"
+            >
+              <div class="bg-blue-950 py-6 text-center">
+                <img
+                  loading="lazy"
+                  class="mx-auto aspect-square w-16 object-contain mb-3"
+                  src="images/img-6753.webp"
+                  alt=""
+                />
+                <h3 class="font-bold text-2xl mb-3">Trade Tokens</h3>
+                <p class="text-lg">
+                  Trade any tokens on <br class="md:block hidden" />
+                  Ethereum
+                </p>
+              </div>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-delay="50"
+              class="bg-gradient-to-b from-blue-100 to-blue-800 rounded-md p-1"
+            >
+              <div class="bg-blue-950 py-6 text-center">
+                <img
+                  loading="lazy"
+                  class="mx-auto aspect-square w-16 object-contain mb-3"
+                  src="images/img-6751.webp"
+                  alt=""
+                />
+                <h3 class="font-bold text-2xl mb-3">Trade STAR</h3>
+                <p class="text-lg">
+                  STAR token holders receive <br class="md:block hidden" />
+                  revenue share
                 </p>
               </div>
             </div>
@@ -469,7 +491,7 @@
               </div>
             </div>
           </div>
-          <div>
+          <div class="flex-grow">
             <img
               loading="lazy"
               class="aspect-[16/7] object-contain w-full"
@@ -483,8 +505,8 @@
       <section data-aos="fade-up" class="text-center container lg:my-40 my-32">
         <h2 class="font-bold text-3xl mb-7">Starbot Affiliates</h2>
         <h3 class="font-bold md:text-5xl text-3xl mb-7">
-          Help Starbot grow, get
-          <span class="md:text-4xl text-2xl text-blue-700">rewarded!</span>
+          Help Starbot grow,
+          <span class="md:text-4xl text-2xl text-blue-700">get rewarded!</span>
         </h3>
         <p class="font-bold text-2xl leading-loose">
           We offer a highly competitive affiliate program, allowing you to
@@ -492,7 +514,7 @@
           <span
             class="block md:text-5xl text-3xl font-semibold text-blue-700 md:my-3 my-2"
           >
-            25% of the 1% trading fee
+            50% of the 1% trading fee
           </span>
           paid by the user you referred.
         </p>
@@ -506,18 +528,16 @@
       />
 
       <section class="container lg:my-40 my-32">
-        <div class="rounded-md overflow-hidden">
-          <div class="text-center border-4 py-8 px-5">
-            <h2 class="md:text-5xl text-2xl italic mb-8">
-              A galaxy full of trading opportunities awaits.
-            </h2>
-            <a
-              class="inline-block font-bold py-4 px-10 text-lg text-black uppercase rounded-full from-slate-50 to-slate-300 bg-gradient-to-b hover:from-slate-300 hover:to-slate-50"
-              href="#"
-            >
-              Get Started
-            </a>
-          </div>
+        <div class="max-w-fit mx-auto text-center border-4 rounded-xl p-8">
+          <h2 class="md:text-5xl text-2xl mb-8 font-bold">
+            A galaxy full of trading opportunities awaits.
+          </h2>
+          <a
+            class="inline-block font-bold py-4 px-10 text-lg text-black uppercase rounded-full from-slate-50 to-slate-300 bg-gradient-to-b hover:from-slate-300 hover:to-slate-50"
+            href="#"
+          >
+            Get Started
+          </a>
         </div>
       </section>
     </main>
@@ -527,7 +547,8 @@
         <nav class="flex md:gap-12 gap-6 text-center justify-center mb-6">
           <a
             class="w-16 h-16 border-2 border-blue-100 rounded-full grid place-items-center text-current text-blue-50 hover:text-white md:text-xl text-base uppercase"
-            href="#"
+            href="https://t.me/StarBot_ai_bot"
+            target="_blank"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -548,7 +569,8 @@
 
           <a
             class="w-16 h-16 border-2 border-blue-100 rounded-full grid place-items-center text-current text-blue-50 hover:text-white md:text-xl text-base uppercase"
-            href="#"
+            href="https://twitter.com/StarbotAI"
+            target="_blank"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
