@@ -8,6 +8,7 @@ const Header = {
   init() {
     $(() => {
       $(window).on('scroll', this.handleScroll.bind(this));
+      this.handleScroll();
     });
   },
 };

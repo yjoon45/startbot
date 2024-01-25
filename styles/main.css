@@ -555,7 +555,22 @@
   .divider-bg {
     background: linear-gradient(
       to bottom,
-      transparent -30%,
+      transparent,
+      theme('colors.blue.950'),
+      theme('colors.blue.950'),
+      transparent
+    );
+  }
+  .divider-bg-2 {
+    @apply relative;
+  }
+  .divider-bg-2::before {
+    @apply absolute -top-1/2 left-0 right-0 bottom-1/2 md:bottom-0 -z-10;
+    content: '';
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      theme('colors.blue.950'),
       theme('colors.blue.950'),
       transparent
     );
