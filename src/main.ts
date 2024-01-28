@@ -1,11 +1,11 @@
-import { Navigation } from './components/navigation';
-import Player from './components/player';
 import AOS from 'aos';
-import Header from './components/header';
 import './components/slider';
+import { Navigation } from './components/navigation';
+import Header from './components/header';
+import YTPlayer from './components/youtubePlayer';
 
 AOS.init({ once: true });
 
 Navigation.init();
-Player.init();
 Header.init();
+new YTPlayer().init();

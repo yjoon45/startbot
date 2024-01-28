@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "@types/slick-carousel": "^1.6.40",
+    "@types/youtube": "^0.0.50",
     "aos": "3.0.0-beta.6",
     "jquery": "^3.7.1",
     "postcss-import": "^15.1.0"

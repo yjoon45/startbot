@@ -590,3 +590,20 @@
     @apply w-20;
   }
 }
+
+@layer components {
+  .unmute,
+  .play {
+    display: none;
+  }
+
+  .mute-controls.is-unmute .mute,
+  .play-controls.is-playing .pause {
+    display: none;
+  }
+
+  .mute-controls.is-unmute .unmute,
+  .play-controls.is-playing .play {
+    display: block;
+  }
+}
